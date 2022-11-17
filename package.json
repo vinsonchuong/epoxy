@@ -1,0 +1,38 @@
+{
+  "name": "epoxy",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/epoxy",
+  "bugs": "https://github.com/vinsonchuong/epoxy/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "repository": "vinsonchuong/epoxy",
+  "scripts": {
+    "test": "xo && ava",
+    "release": "semantic-release"
+  },
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^5.1.0",
+    "semantic-release": "^19.0.5",
+    "xo": "^0.53.0"
+  },
+  "ava": {
+    "verbose": true
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
+}
